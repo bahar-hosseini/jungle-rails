@@ -5,9 +5,9 @@
  <%= image_tag item.product.image.thumb.url  %>
 
  <dl class="dl-horizontal">
- <dt><h3>You purchased: <%= item.product.name %></h3></dt>
-<dt><h4>Item price: $<%= item.product.price %></h4></dt>
-<dt><h4>Number of your items: <%= item.quantity%></h4></dt>
+ <dt>You purchased: <h3> <%= item.product.name %></h3></dt>
+<dt>Item price: <h4>$ <%= item.product.price %></h4></dt>
+<dt> Number of your items: <h4><%= item.quantity%></h4></dt>
 <dt>Discription: <h4>More information about the item you have purchased: <%= item.product.description %></h4></dt>
 <br>
 <div>
