@@ -9,6 +9,7 @@
 <h4>You have not purchased yet</h4>
 </div>
 <% else %>
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -21,7 +22,6 @@
       </thead>
       <tbody>
       <% enhanced_cart.each do |item| %>
-
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
       </tbody>
