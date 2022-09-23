@@ -1,12 +1,20 @@
 <section class="orders-show">
 
+<h1><%= @orders %><h1>
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
-  </header>
 
+  </header>
+<main>
+<%= render 'line_item' %>
+<h4>Total order: $<%=@order.total %></h4>
+</main>
   <div class="order-summary jumbotron">
+  <h4>Email: <%=@order.email %></h4>
     <h4>Thank you for your order!</h4>
+    </dl>
   </div>
+
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
