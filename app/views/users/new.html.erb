@@ -1,0 +1,35 @@
+<h1>Signup!</h1>
+<div class="container">
+<form class='col-md-5 offset-md-5'>
+  <div class="form-group">
+<%= form_for :user, url: '/users' do |f| %>
+<div>
+<label> Name: </label>
+<div> 
+  <%= f.text_field :name %>
+  </div> 
+  </div>
+  <div>
+  <label  > Email: </label>
+  <div> 
+  <%= f.text_field :email %>
+  </div> 
+  </div>
+  <div>
+  <label > Password: </label>
+  <div> 
+  <%= f.password_field :password %>
+  </div> 
+  </div>
+  <div>
+  <label > Password Confirmation: </label>
+ <div> <%= f.password_field :password_confirmation %></div>
+  </div>
+  <div>
+  <%= f.submit "Submit" %>
+</div>
+<% end %>
+
+</div>
+</form>
+</div>
