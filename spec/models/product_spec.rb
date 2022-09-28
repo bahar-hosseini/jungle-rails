@@ -45,13 +45,4 @@ RSpec.describe Product, type: :model do
       @product.category = nil
       expect(@product).to_not be_valid
     end
-
-    it("There is products on the page", () => {
-  cy.get(".products article").should("be.visible");
-});
-  end
-
-  it("There is 2 products on the page", () => {
-  cy.get(".products article").should("have.length", 2);
-});
 end
