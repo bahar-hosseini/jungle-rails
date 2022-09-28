@@ -23,9 +23,19 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
+
+## Screenshots
+![This is an image](/public/images/README/header.png)
+![This is an image](/public/images/README/homepage.png)
+![This is an image](/public/images/README/products.png)
+![This is an image](/public/images/README/cart.png)
+![This is an image](/public/images/README/signup.png)
+![This is an image](/public/images/README/login.png)
+
 ## Dependencies
 
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- cypress
