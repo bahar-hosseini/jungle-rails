@@ -8,7 +8,6 @@ RSpec.describe Product, type: :model do
       @category = Category.new(name: 'evergreen')
       @product = Product.new(name: 'plant2', price_cents: 64.49, quantity: 12, category: @category)
       @product.save!
-   
 
       expect(@product.name).to be_present
     end
@@ -29,7 +28,6 @@ RSpec.describe Product, type: :model do
 
       @product.price_cents = nil
       expect(@product).to_not be_valid
-
     end
     it 'validate quantity' do
       @category = Category.new(name: 'evergreen')
